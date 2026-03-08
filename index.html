@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>My Garbage Diary</title>
+  <style>
+    body { font-family: Arial; max-width: 600px; margin: auto; padding: 20px; }
+    textarea { width: 100%; height: 100px; }
+    .entry { border-bottom: 1px solid #ccc; padding: 10px 0; }
+    button { cursor: pointer; }
+  </style>
+</head>
+<body>
+
+<h1>My Garbage Diary</h1>
+
+<label>パスワード : <input type="password" id="pw"></label><br><br>
+
+<textarea id="entry" placeholder="ここに書く"></textarea><br>
+<button onclick="postEntry()">投稿</button>
+
+<div id="diary"></div>
+
+<script type="module" src="script.js"></script>
+</body>
+</html>
