@@ -104,7 +104,7 @@ async function loadEntries() {
     div.className = "entry";
     div.innerHTML = `
       <b>${d.date}</b>
-      <p>${d.text}</p>
+      <p style="white-space: pre-wrap;">${d.text}</p>
       ${imageHTML}
       <button onclick="likeEntry('${id}', this)" data-likes="${d.likes}">Like    ${d.likes}</button>
       <div class="comments">${commentsHTML}</div>
@@ -120,3 +120,4 @@ window.likeEntry = likeEntry;
 window.postComment = postComment;
 
 loadEntries();
+
